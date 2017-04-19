@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Original simple jQuery nanameSlider</title>
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="./jquery.nanameSlider.css">
+<script src="../js/jquery-2.2.0.min.js"></script>
+<script src="./jquery.nanameSlider.js"></script>
+<script>
+$(function(){
+	$( '.slider1' ).nanameSlider({
+		skewYangle : -5,
+		//pagerVisibility: false,
+		beforeSelector: '.menu',
+		afterSelector: '.bar',
+		slideDirection: 'right',
+		//autoPlay: true,
+		prevButtonTop: -10,
+		nextButtonTop: 10,
+		pNiconfontLclass: 'icon-left',
+		pNiconfontRclass: 'icon-right',
+	});
+	
+	$( '.slider2' ).nanameSlider({
+		skewYangle : 5,
+		//pagerVisibility: false,
+		beforeSelector: '.menuR',
+		//afterSelector: '.barR',
+		slideDirection: 'right',
+		autoPlay: true,
+		//autoPause: 4000,
+		//prevButtonTop: 10,
+		/*pNiconfontLclass: 'icon-chevron-left',
+		pNiconfontRclass: 'icon-chevron-right',*/
+		nextButtonTop: -10,
+	});
+	
+	$( '.slider3' ).nanameSlider({
+		skewYangle : 10,
+		beforeSelector: '.menu',
+		pagerVisibility: false,
+		pagerTop: 20,
+		pNiconfontLclass: 'icon-triangle-left',
+		pNiconfontRclass: 'icon-triangle-right',
+		pNbuttonVisibility: false,
+	});
+});
+</script>
+</head>
+<body>
+
+
+<div id="Main">
+
+
+<div class="w960 s1">
+<div class="menu">
+<img class="ph p1" src="../img/lines_logow82.png">
+<p><a href="#">メニュー1</a>｜<a href="#">メニュー2</a>｜<a href="#">メニュー3</a>｜<a href="#">メニュー4</a>｜<a href="#">メニュー5</a></p></div>
+<ul class="naname slider1">
+<li>
+<div class="row">
+	<img class="ph p1" src="../img/blank1500_600.gif">
+	<div class="rowin">
+		<div>
+		<p class="ti center"><img class="" src="https://wotbu.com/wp/wp-content/themes/lines_theme2016_woocom_market/img/wordpress-logo-hoz.png" alt="WordPress"><br>
+		WordPress（ワードプレス）のテーマ、カスタマイズ<br>
+		<a href="window-event.html" target="_self" class="but1">詳しくはこちら</a>
+		</p>
+		</div>
+	</div>
+</div>
+</li>
+<li>
+<div class="row">
+	<img class="ph p2" src="../img/blank1500_600.gif">
+	<div class="rowin">
+		<div>
+		<p class="ti center"><img class="" src="https://wotbu.com/wp/wp-content/themes/lines_theme2016_woocom_market/img/woocommerce_logo.png" alt="WooCommerce"><br>
+		WooCommerce（ワードプレスPlugin）のテーマ、カスタマイズ<br>
+		<a href="window-event.html" target="_self" class="but1">詳しくはこちら</a>
+		</p>
+		</div>
+	</div>
+</div>
+</li>
+<li>
+<div class="row">
+	<img class="ph p3" src="../img/blank1500_600.gif">
+	<div class="rowin">
+		<div>
+		<p class="ti center"><img class="" src="https://wotbu.com/wp/wp-content/themes/lines_theme2016_woocom_market/img/fullscratch.png" alt="FULL SCRATCH"><br>
+		フルスクラッチ（HTML5/CSS3/JS/PHP等）<br>
+		<a href="window-event.html" target="_self" class="but1">詳しくはこちら</a>
+		</p>
+		</div>
+	</div>
+</div>
+</li>
+<li>
+<div class="row">
+	<img class="ph p4" src="../img/blank1500_600.gif">
+	<div class="rowin">
+		<div>
+		<p class="ti center"><img class="" src="https://wotbu.com/wp/wp-content/themes/lines_theme2016_woocom_market/img/othercontents.png" alt="OTHER CONTENTS"><br>
+		その他Webコンテンツ全般<br>
+		<a href="window-event.html" target="_self" class="but1">詳しくはこちら</a>
+		</p>
+		</div>
+	</div>
+</div>
+</li>
+
+<li>
+<div class="row">
+	<img class="ph p5" src="../img/blank1500_600.gif">
+	<div class="rowin">
+		<div>
+		<p class="ti center"><img class="" src="https://wotbu.com/wp/wp-content/themes/lines_theme2016_woocom_market/img/wordpress-logo-hoz.png" alt="WordPress"><br>
+		WordPress（ワードプレス）の常時SSL<br>
+		<a href="window-event.html" target="_self" class="but1">詳しくはこちら</a>
+		</p>
+		</div>
+	</div>
+</div>
+</li>
+<li>
+<div class="row">
+	<img class="ph p6" src="../img/blank1500_600.gif">
+	<div class="rowin">
+		<div>
+		<p class="ti center"><img class="" src="https://wotbu.com/wp/wp-content/themes/lines_theme2016_woocom_market/img/wordpress-logo-hoz.png" alt="WordPress"><br>
+		666WordPress（ワードプレス）<br>
+		<a href="window-event.html" target="_self" class="but1">詳しくはこちら</a>
+		</p>
+		</div>
+	</div>
+</div>
+</li>
+</ul>
+<div class="bar">bar<br><br><br><br><br><br></div>
+
+<!-- /.w960--></div>
+
+<br><br><br><br>
+<p>スライダーNo2</p>
+<div class="s2">
+<div class="menuR"><a href="#">メニュー6</a>｜<a href="#">メニュー7</a>｜<a href="#">メニュー8</a>｜<a href="#">メニュー9</a>｜<a href="#">メニュー10</a></div>
+<ul class="naname slider2">
+<li>
+<div class="row">
+	
+	<div class="rowin">
+		<div>
+		<p class="ti center">スライダーNo2-1<br>
+		<a href="window-event.html" target="_self" class="but1">詳しくはこちら</a>
+		</p>
+		</div>
+	</div>
+</div>
+</li>
+<li>
+<div class="row">
+	
+	<div class="rowin">
+		<div>
+		<p class="ti center">スライダーNo2-2
+		</p>
+		</div>
+	</div>
+</div>
+</li>
+<li>
+<div class="row">
+	
+	<div class="rowin">
+		<div>
+		<p class="ti center">スライダーNo2-3<br>
+		<a href="window-event.html" target="_self" class="but1">詳しくはこちら</a>
+		</p>
+		</div>
+	</div>
+</div>
+</li>
+<li>
+<div class="row">
+	
+	<div class="rowin">
+		<div>
+		<p class="ti center">スライダーNo2-4
+		</p>
+		</div>
+	</div>
+</div>
+</li>
+</ul>
+<div class="barR">barR<br><br><br><br></div>
+</div>
+<br><br><br><br>
+
+
+<p>スライダーNo3</p>
+<div class="s3">
+<div class="menu">
+<p><a href="#">メニュー1</a>｜<a href="#">メニュー2</a>｜<a href="#">メニュー3</a>｜<a href="#">メニュー4</a>｜<a href="#">メニュー5</a></p></div>
+<ul class="naname slider3">
+<li>
+<div class="row">
+	<img class="img" src="../img/img1500_300_01.jpg" width="1500" height="300">
+	<div class="rowin">
+		<div>
+		<p class="ti center">image01<br>
+		<a href="window-event.html" class="but1">詳しくはこちら</a>
+		</p>
+		</div>
+	</div>
+</div>
+</li>
+<li>
+<div class="row">
+	<img class="img" src="../img/img1500_300_02.jpg" width="1500" height="300">
+	<div class="rowin">
+		<div>
+		<p class="ti center">image02<br>
+		<a href="window-event.html" class="but1">詳しくはこちら</a>
+		</p>
+		</div>
+	</div>
+</div>
+</li>
+<li>
+<div class="row">
+	<img class="img" src="../img/img1500_300_03.jpg" width="1500" height="300">
+	<div class="rowin">
+		<div>
+		<p class="ti center">image03<br>
+		<a href="window-event.html" class="but1">詳しくはこちら</a>
+		</p>
+		</div>
+	</div>
+</div>
+</li>
+<li>
+<div class="row">
+	<img class="img" src="../img/img1500_300_04.jpg" width="1500" height="300">
+	<div class="rowin">
+		<div>
+		<p class="ti center">image04<br>
+		<a href="window-event.html" class="but1">詳しくはこちら</a>
+		</p>
+		</div>
+	</div>
+</div>
+</li>
+<li>
+<div class="row">
+	<img class="img" src="../img/img1500_300_05.jpg" width="1500" height="300">
+	<div class="rowin">
+		<div>
+		<p class="ti center">image05<br>
+		<a href="window-event.html" class="but1">詳しくはこちら</a>
+		</p>
+		</div>
+	</div>
+</div>
+</li>
+</ul>
+</div>
+<br><br><br><br>
+
+<!-- /#Main --></div>
+</body>
+</html>

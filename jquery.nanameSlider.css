@@ -1,0 +1,244 @@
+@charset "utf-8";
+
+/* common */
+body {background: #eee;}
+a {
+	overflow: hidden;
+	color: #3f3f3f;
+	text-decoration: none;
+}
+#Main {
+	margin: 0 auto;
+}
+#Main .w960 {
+	margin: 0 auto;
+	max-width: 960px;
+	overflow: hidden;
+}
+
+.menu {
+	transform-origin: left top;
+	position: relative;
+	z-index: 1;
+	padding-bottom: 5px; padding-left: 5px;
+}
+.menu img {vertical-align: bottom;}
+.menu p {
+	display: inline-block;
+}
+.menuR {
+	transform-origin: left top;
+	position: relative;
+	z-index: 1;
+	text-align: right;
+	right: 0;
+	padding-bottom: 5px; padding-right: 5px;
+}
+.bar, .barR {
+	transform-origin: left top;
+	position: relative;
+	z-index: 1;
+	background: #eee000;
+	text-align: center;
+	display: block;
+	width: 100%;
+}
+
+.skewy-wrapper {
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	max-width: 100%;
+}
+.skewy-wrapper .viewport-viewport {
+	box-shadow: none;
+	border: none;
+	left: 0;
+	width: 100%;
+	position: relative;
+}
+
+ul.naname {
+	position: relative;
+	clear: both;
+	transform-origin: left top;
+}
+ul.naname li {
+	float: left;
+	position: relative;
+	box-sizing: border-box;
+}
+
+ul.naname li:after {
+	position: absolute;
+	left: 0; top: 0; right: 0; bottom: 0;
+	content: " ";
+	/*box-shadow: 0 2px 2px -1px rgba(255, 255, 255, .9) inset, 0 -2px 2px -1px rgba(255, 255, 255, .9) inset;*/
+	box-shadow: 0 2px 2px -1px rgba(238, 238, 238, .9) inset, 0 -2px 2px -1px rgba(238, 238, 238, .9) inset;
+}
+
+
+.row {
+	position: relative;
+}
+.row .rowin {
+	width: 100%; height: 100%;
+	font-size: 150%;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	position: absolute;
+}
+.row .rowin > div {
+	margin: 0 auto;
+	font-size: 1rem;
+	line-height: 1.7;
+	padding: 0 60px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+.row .rowin p.ti {
+	font-size: 24px; font-weight: 600;
+	z-index: 2;
+}
+
+.row .rowin p img {
+	width: auto; height :auto;
+}
+.row .rowin p a.but1 {
+	display: inline-block;
+	margin-top: 20px;
+	background: #ccc url(../img/arrow_r777.png) no-repeat right 10px center ;
+	padding: 8px 2em;
+	border-radius: 10px;
+	font-size: 20px; font-weight: 100;
+}
+.row .ph.p1 {
+	background: 
+		linear-gradient(to right, rgba(0,0,0,0.7), rgba(255,255,255,0.3)),
+		url(../img/gori0I9a3099072103255.jpg);
+	background-size: cover;
+}
+.row .ph.p2 {
+	background: 
+		linear-gradient(-45deg, rgba(246, 255, 0, .8), rgba(255, 0, 161, .8)),
+		url(../img/pak12_10naname.jpg);
+	background-size: cover;
+}
+.row .ph.p3 {
+	background: 
+		linear-gradient(to right, rgba(0,0,0,0.7), rgba(255,255,255,0.3)),
+		url(../img/iphone7katate.jpg);
+	background-size: cover; 
+}
+.row .ph.p4 {
+	background: 
+		linear-gradient(to right, rgba(0,0,0,0.7), rgba(255,255,255,0.3)),
+		url(../img/a0001_017839_m.jpg) bottom center;
+	background-size: cover; 
+}
+.row .ph.p5 {
+	background: 
+		linear-gradient(to right, rgba(0,0,0,0.7), rgba(255,255,255,0.3)),
+		url(../img/gori_9V9A8291.jpg) bottom center;
+	background-size: cover; 
+}
+.row .ph.p6 {
+	/*background-image: url(../img/img06.gif);*/
+	background: url(../img/a0001_017839_m.jpg) bottom center;
+	background-size: cover; 
+}
+.row > img {
+	width: 100% !important; height :auto;
+}
+
+/* arrows */
+.skewy-prev {
+	left: 15px; z-index: 1;
+}
+.skewy-next {
+	right: 15px; z-index: 1;
+}
+.skewy-prev, .skewy-next {
+	position: absolute;
+	display: block;
+	cursor: pointer;
+	color: transparent;
+	background: transparent;
+}
+
+.s1 .skewy-prev .icon-left:before {
+	content: url(../img/arrow_l26_6.png);
+}
+.s1 .skewy-next .icon-right:before {
+	content: url(../img/arrow_r26_6.png);
+}
+.icon-chevron-left, .icon-chevron-right {
+	font-size: 35px; color: #fff;
+}
+.icon-triangle-left, .icon-triangle-right {
+	font-size: 40px; color: #333;
+}
+.icon-angle-left, .icon-angle-right {
+	font-size: 50px; color: #fff;
+}
+
+
+.skewy-pager a:hover, .skewy-pager a.active {
+	background: #000;
+}
+.skewy-pager a {
+	text-indent: -9999px;
+	display: block;
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+	outline: 0;
+	border-radius: 5px;
+	background: #ccc;
+}
+.skewy-pager-item {
+	display: inline-block;
+}
+.skewy-pager {
+	text-align: center;
+	font-size: .85em;
+	font-family: Arial;
+	font-weight: bold;
+	color: #666;
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	transform-origin: left top;
+}
+
+/* slider2 */
+ul.slider2 li {
+	height: 200px;
+}
+ul.slider2 li .row .rowin {
+	padding: 100px 0px;
+	background: #ccc;
+}
+ul.slider2 li .row .rowin > div {
+	background: #ccc;
+	text-align: center;
+	font-size: 26px;
+	font-weight: bold;
+	color: #666;
+}
+ul.slider2 li .row .rowin p a.but1 {
+	display: inline-block;
+	margin-top: 20px;
+	background: #666 url(../img/arrow_r777w.png) no-repeat right 10px center ;
+	color: #fff;
+}
+
+/* slider3 */
+ul.slider3 li img {
+	width: 100%; height :auto;
+}
